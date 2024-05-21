@@ -1,4 +1,6 @@
-﻿Console.WriteLine("************ - Classes and Objects - *************");
+﻿using ConsoleApp.ClassesDemo;
+
+Console.WriteLine("************ - Classes and Objects - *************");
 
 // Define an object of a type Person.
 Person person;
@@ -27,4 +29,33 @@ var person2 = new Person("Developer", "Two", "741852963");
 person2.PrintFullName();
 person2.PrintInitials();
 person2.GenerateTaxNumber();
+var person2IdNumber = person2.GetIdNumber();
+Console.WriteLine(person2IdNumber);
 
+// Initialize new Classes of Teacher and Student
+var teacher = new Teacher();
+teacher.LastName = "THompson";
+teacher.FirstName = "Theresa";
+teacher.DateofBirth = new DateOnly(2023, 10, 29);
+
+teacher.PrintFullName();
+teacher.PrintInitials();
+teacher.GenerateTaxNumber();
+var teachertaxNumber = teacher.GetTaxNumber();
+Console.WriteLine(teachertaxNumber);
+teacher.GenerateTeacherIdNumber();
+var teacherIdNumber = teacher.GetIdNumber();
+Console.WriteLine(teacherIdNumber);
+
+
+Student student = new();
+student.LastName = "THompson";
+student.FirstName = "Theresa";
+student.DateofBirth = new DateOnly(2023, 10, 29);
+
+student.PrintFullName();
+student.PrintInitials();
+student.GenerateTaxNumber();
+student.GenerateStudentIdNumber();
+var studentIdNumber = student.GetIdNumber();
+Console.WriteLine(studentIdNumber);
