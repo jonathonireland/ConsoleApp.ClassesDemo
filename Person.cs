@@ -3,11 +3,11 @@
 
 using System.Security.Cryptography;
 
-public class Person 
+public class Person
 {
     public Person()
-    { 
-    
+    {
+
     }
 
     public Person(string firstName, string lastName, DateOnly dob)
@@ -17,7 +17,7 @@ public class Person
         DateofBirth = dob;
     }
 
-    public Person(string firstName, string lastName, string taxNumber) 
+    public Person(string firstName, string lastName, string taxNumber)
     {
         FirstName = firstName;
         LastName = lastName;
@@ -32,7 +32,7 @@ public class Person
     // Field member
     private string _taxNumber;
 
-    public void PrintFullName() 
+    public void PrintFullName()
     {
         Console.WriteLine($"{FirstName} {LastName}");
     }
@@ -49,7 +49,7 @@ public class Person
         if (string.IsNullOrEmpty(_taxNumber))
         {
             _taxNumber = RandomNumberGenerator.GetInt32(100000, 9999999).ToString();
-        } 
+        }
         else
         {
             Console.WriteLine($"Tax Number already exists for {FirstName} {LastName}");
@@ -59,6 +59,18 @@ public class Person
     public string GetTaxNumber()
     {
         return _taxNumber;
+    }
+
+    public int GetAge()
+    {
+        var age = DateTime.Now.Year - DateofBirth.Year;
+        return age;
+    }
+
+    public int GetAge(int year)
+    {
+        var age = year - DateofBirth.Year;
+        return age;
     }
 
 }
