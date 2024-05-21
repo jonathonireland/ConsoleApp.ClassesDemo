@@ -59,3 +59,16 @@ student.GenerateTaxNumber();
 student.GenerateStudentIdNumber();
 var studentIdNumber = student.GetIdNumber();
 Console.WriteLine(studentIdNumber);
+
+// Polygon polygon = new Polygon(); // compiler error
+Rectangle rectangle = new(10, 20);
+var rectangleArea = rectangle.Area();
+Console.WriteLine("Rectangle Area: "+rectangleArea);
+
+Square square = new(50);
+var squareArea = square.Area();
+Console.WriteLine("Square Area: "+squareArea);
+
+Triangle triangle = new(60, 20);
+var triangleArea = triangle.Area();
+Console.WriteLine("Triangle Area: "+triangleArea);
