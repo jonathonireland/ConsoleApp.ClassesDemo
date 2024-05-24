@@ -1,4 +1,5 @@
-﻿using ConsoleApp.ClassesDemo;
+﻿using ConsoleApp.ClassesDemo.Classes.ShapeDemo;
+using ConsoleApp.ClassesDemo.interfaces;
 
 public class Cuboid : Polygon, I2DShape, I3DShape
 {

@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp.ClassesDemo
+namespace ConsoleApp.ClassesDemo.Classes.PersonDemo
 {
     public class Student : Person
     {

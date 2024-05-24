@@ -1,8 +1,10 @@
-﻿namespace ConsoleApp.ClassesDemo
+﻿using ConsoleApp.ClassesDemo.interfaces;
+
+namespace ConsoleApp.ClassesDemo.Classes.ShapeDemo
 {
     public class Sphere : ICircularShape
     {
-        public Sphere(double r) 
+        public Sphere(double r)
         {
             Radius = r;
         }
@@ -14,7 +16,7 @@
 
         public double Volume()
         {
-            return (4 / 3) * Math.PI * Radius;
+            return 4 / 3 * Math.PI * Radius;
         }
     }
 

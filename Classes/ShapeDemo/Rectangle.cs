@@ -1,6 +1,8 @@
-﻿namespace ConsoleApp.ClassesDemo
+﻿using ConsoleApp.ClassesDemo.interfaces;
+
+namespace ConsoleApp.ClassesDemo.Classes.ShapeDemo
 {
-    public class Rectangle : Polygon, I2DShape 
+    public class Rectangle : Polygon, I2DShape
     {
         public double Length { get; set; }
 
@@ -11,12 +13,12 @@
         }
         public override double Area()
         {
-            return (double)(Length * Width);        
+            return (double)(Length * Width);
         }
 
         public double Perimeter()
         {
-            return (2 * Length) + (2 * Width);
+            return 2 * Length + 2 * Width;
         }
 
         double I2DShape.Perimeter()

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 
-namespace ConsoleApp.ClassesDemo
+namespace ConsoleApp.ClassesDemo.Classes.PersonDemo
 {
     public class Teacher : Person
     {
@@ -13,6 +13,6 @@ namespace ConsoleApp.ClassesDemo
         public void GenerateTeacherIdNumber()
         {
             _idNumber = "TCH-" + GetRandomNumber();
-        }     
+        }
     }
 }

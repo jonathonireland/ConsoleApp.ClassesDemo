@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp.ClassesDemo
+﻿namespace ConsoleApp.ClassesDemo.interfaces
 {
     public interface I3DShape
     {

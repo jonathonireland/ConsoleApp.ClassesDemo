@@ -1,9 +1,9 @@
-﻿namespace ConsoleApp.ClassesDemo
+﻿namespace ConsoleApp.ClassesDemo.Classes.ShapeDemo
 {
     public class Square : Polygon
     {
 
-        public Square (double width)
+        public Square(double width)
         {
             Width = width;
         }

@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp.ClassesDemo
+﻿namespace ConsoleApp.ClassesDemo.Classes.ShapeDemo
 {
     public class Triangle : Polygon
     {
@@ -16,7 +16,7 @@
         public override double Area()
         {
             var wholeArea = Width * Length;
-            
+
             return wholeArea / 2;
         }
     }
