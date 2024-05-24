@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.ClassesDemo
 {
-    internal class Class1
+    internal interface I2DShape
     {
+        double Perimeter();
     }
 }

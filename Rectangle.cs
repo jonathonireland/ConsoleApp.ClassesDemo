@@ -1,17 +1,27 @@
 ﻿namespace ConsoleApp.ClassesDemo
 {
-    public class Rectangle : Polygon 
+    public class Rectangle : Polygon, I2DShape 
     {
-        public int Length { get; set; }
+        public double Length { get; set; }
 
-        public Rectangle(int width, int length)
+        public Rectangle(double width, double length)
         {
             Length = length;
             Width = width;
         }
-        public override int Area()
+        public override double Area()
         {
-            return Length * Width;        
+            return (double)(Length * Width);        
+        }
+
+        public double Perimeter()
+        {
+            return (2 * Length) + (2 * Width);
+        }
+
+        double I2DShape.Perimeter()
+        {
+            throw new NotImplementedException();
         }
     }
 }

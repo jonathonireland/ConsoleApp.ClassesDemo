@@ -8,8 +8,8 @@ namespace ConsoleApp.ClassesDemo
 {
     public abstract class Polygon
     {
-        public int Width { get; set; }
+        public double Width { get; set; }
 
-        public abstract int Area();
+        public abstract double Area();
     }
 }

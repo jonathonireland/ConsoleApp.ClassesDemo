@@ -3,12 +3,12 @@
     public class Square : Polygon
     {
 
-        public Square (int width)
+        public Square (double width)
         {
             Width = width;
         }
 
-        public override int Area()
+        public override double Area()
         {
             return Width * Width;
             throw new NotImplementedException();

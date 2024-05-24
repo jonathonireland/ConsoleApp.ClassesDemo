@@ -72,3 +72,17 @@ Console.WriteLine("Square Area: "+squareArea);
 Triangle triangle = new(60, 20);
 var triangleArea = triangle.Area();
 Console.WriteLine("Triangle Area: "+triangleArea);
+
+Cuboid cuboid = new Cuboid(1, 5, 7);
+var cuboidArea = cuboid.Area();
+var cuboidVolume = cuboid.Volume();
+var cuboidPerimeter = cuboid.Perimeter();
+Console.WriteLine($"Cuboid area is: {cuboidArea}");
+Console.WriteLine($"Cuboid volume is: {cuboidVolume}");
+Console.WriteLine($"Cuboid perimeter is: {cuboidPerimeter}");
+
+Sphere sphere = new(7);
+var sphereCircumference = sphere.Circumference();
+var sphereVolume = sphere.Volume();
+Console.WriteLine($"{nameof(Sphere)} area is: {sphereCircumference}");
+Console.WriteLine($"Sphere volume is: {sphereVolume}");

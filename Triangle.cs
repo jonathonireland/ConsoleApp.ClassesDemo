@@ -4,16 +4,16 @@
     {
         private int height;
 
-        public int Width { get; private set; }
-        public int Length { get; set; }
+        public double Width { get; private set; }
+        public double Length { get; set; }
 
-        public Triangle(int width, int length)
+        public Triangle(double width, double length)
         {
             Width = width;
             Length = length;
         }
 
-        public override int Area()
+        public override double Area()
         {
             var wholeArea = Width * Length;
             
