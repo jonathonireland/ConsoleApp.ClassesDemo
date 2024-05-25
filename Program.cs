@@ -7,7 +7,7 @@ Console.WriteLine("************ - Classes and Objects - *************");
 // Define an object of a type Person.
 Person person;
 
-Person baby = new Person();
+Person baby = new Person() { FirstName = string.Empty, LastName = string.Empty};
 
 baby.LastName = "THompson";
 baby.FirstName = "Theresa";
@@ -21,12 +21,12 @@ var taxNumber = baby.GetTaxNumber();
 
 Console.WriteLine(taxNumber);
 
-var person1 = new Person("Developer", "One", new DateOnly(2000, 10, 31));
+var person1 = new Person("Developer", "One", new DateOnly(2000, 10, 31)) { FirstName = string.Empty, LastName = string.Empty };
 
 person1.PrintFullName();
 person1.PrintInitials();
 
-var person2 = new Person("Developer", "Two", "741852963");
+var person2 = new Person("Developer", "Two", "741852963") { FirstName = string.Empty, LastName = string.Empty };
 
 person2.PrintFullName();
 person2.PrintInitials();
@@ -35,7 +35,7 @@ var person2IdNumber = person2.GetIdNumber();
 Console.WriteLine(person2IdNumber);
 
 // Initialize new Classes of Teacher and Student
-var teacher = new Teacher();
+var teacher = new Teacher() { FirstName = string.Empty, LastName = string.Empty };
 teacher.LastName = "THompson";
 teacher.FirstName = "Theresa";
 teacher.DateofBirth = new DateOnly(2023, 10, 29);
@@ -50,7 +50,7 @@ var teacherIdNumber = teacher.GetIdNumber();
 Console.WriteLine(teacherIdNumber);
 
 
-Student student = new();
+Student student = new() { FirstName = string.Empty, LastName = string.Empty };
 student.LastName = "THompson";
 student.FirstName = "Theresa";
 student.DateofBirth = new DateOnly(2023, 10, 29);

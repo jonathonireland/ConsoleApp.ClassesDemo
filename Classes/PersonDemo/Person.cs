@@ -18,8 +18,8 @@ public partial class Person
     }
 
     // Properties/Data Members
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    public required string FirstName { get; set; }
+    public required string LastName { get; set; }
     public DateOnly DateofBirth { get; set; }
 
     // Field member
