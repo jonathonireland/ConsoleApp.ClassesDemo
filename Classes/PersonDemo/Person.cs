@@ -1,20 +1,13 @@
 ﻿
-// Define a class
-
 using System.Security.Cryptography;
 
-public class Person
+namespace ConsoleApp.ClassesDemo.Classes.PersonDemo;
+
+public partial class Person
 {
     public Person()
     {
 
-    }
-
-    public Person(string firstName, string lastName, DateOnly dob)
-    {
-        FirstName = firstName;
-        LastName = lastName;
-        DateofBirth = dob;
     }
 
     public Person(string firstName, string lastName, string taxNumber)
@@ -67,18 +60,6 @@ public class Person
         return _idNumber;
     }
 
-    public int GetAge()
-    {
-        var age = DateTime.Now.Year - DateofBirth.Year;
-        return age;
-    }
-
-    public int GetAge(int year)
-    {
-        var age = year - DateofBirth.Year;
-        return age;
-    }
-
     protected string GetRandomNumber()
     {
         return RandomNumberGenerator
@@ -86,5 +67,18 @@ public class Person
                 .ToString();
     }
 
-}
+    public override bool Equals(object? obj)
+    {
+        return base.Equals(obj);
+    }
 
+    public override int GetHashCode()
+    {
+        return base.GetHashCode();
+    }
+
+    public override string? ToString()
+    {
+        return base.ToString();
+    }
+}

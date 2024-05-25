@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ConsoleApp.ClassesDemo.Utils;
 
 namespace ConsoleApp.ClassesDemo.Classes.PersonDemo
 {
     public class Student : Person
     {
+        private string _idNumber;
+
         public void GenerateStudentIdNumber()
         {
-            _idNumber = "STU-" + GetRandomNumber();
+            _idNumber = PersonHelper.GenerateIdNumber("STU");
         }
 
     }
